@@ -1,0 +1,111 @@
+/* style general */
+
+.font, .font-2, h4, .c-main:hover {
+  color: #61DDD5;
+} 
+
+h4 {
+  font-size: 50px;
+  font-family: 'Amatic SC', cursive;
+}
+
+.bg-img {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 100ms ease;
+  background-image: url('../assets/images/2.png');
+}
+
+.container-bg-img:hover {
+  background: radial-gradient( rgba(0, 0, 0, 0.562),#000000) ;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: bold;  
+}
+
+.container-bg-img {
+  color: transparent;
+  transition: all 500ms ease;  
+}
+
+/* style navbar */
+
+header {
+  background-color: transparent !important;
+}
+
+header .navbar {
+  padding: .8rem 1rem;
+}
+
+header .navbar ul.mr-auto-left {
+  margin-right: 0 !important;
+  margin-left: auto !important;
+}
+
+header .navbar ul.mr-auto-left>li {
+  margin: 0 1rem;
+}
+
+.c-main, .navbar-toggler-icon {
+  color: white;
+}
+
+/* style view MAIN */
+
+.h-90 {
+  height: 90vh;
+}
+
+body {
+  background-color: #0D0E14;
+  color: #ffffff;
+}
+
+.font {
+  font-size: 120px;
+  font-family: 'Amatic SC', cursive;/* (2)  
+  /* font-family: 'Permanent Marker', cursive;   */
+  /* font-family: 'Ceviche One', cursive; (4) */
+  /* font-family: 'Trade Winds', cursive; (mismo) */
+}
+
+  /* .font {
+    font-size: 100px;
+    color: #61DDD5;
+    font-family: 'Permanent Marker', cursive;
+  } */
+
+.font-2 {
+  font-size: 30px;  
+  /* font-family: 'Dosis', sans-serif; (3)(4)(5) */
+  font-family: 'Julius Sans One', sans-serif; /*(2) (5) 
+  /* font-family: 'Amatic SC', cursive; (1) */
+  /* font-family: 'Permanent Marker', cursive; */
+}
+
+/* style ABOUT ME */
+
+#about-me {
+  background-color: #ffffff;
+  color: #0D0E14;
+}
+
+#about-me h4 {
+  color: #DD6169;
+}
+
+/* style WORK */
+
+
+@media (min-width: 768px) {
+  .h-60 {
+    height: 60vh;
+  }
+
+  .h-35 {
+    height: 35vh;
+  }
+}
