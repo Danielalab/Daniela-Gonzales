@@ -18,7 +18,7 @@
 <body>
   <header>
     <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg justify-content-between">
+      <nav id="navbar-example2" class="navbar navbar-expand-lg justify-content-between">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
           aria-expanded="false" aria-label="Toggle navigation">
@@ -28,12 +28,12 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto-left">
             <li class="nav-item">
-              <a class="nav-link c-main" href="#">Portfolio
+              <a class="nav-link c-main" href="#work">Portfolio
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link c-main" href="#">About</a>
+              <a class="nav-link c-main" href="#about-me">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link c-main" href="#">Contact</a>
@@ -51,6 +51,8 @@
       </div>
     </div>
   </header>
+
+  <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
 
   <section class="py-3" id="about-me">
     <div class="container-fluid">
@@ -130,6 +132,7 @@
       </div>
     </div>
   </section>
+</div>
 
   <footer>
     <p class="text-center">Creado por Daniela Gonzales</p>
