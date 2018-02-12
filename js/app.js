@@ -2,8 +2,9 @@ window.onload = () => {
   let divContainerBgImg = $('#work .container-bg-img');
   let spanNameProyect;
 
+  // funcionalidad para efecto de presentación de los proyectos en la sección portafolio 
   function showText () {
-    $(this).css('color', '#61DDD5');;
+    $(this).css('color', '#ffffff');;
   };
   function hideText() {
     $(this).css('color', 'transparent');; 
