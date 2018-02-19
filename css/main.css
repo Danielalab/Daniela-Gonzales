@@ -1,6 +1,6 @@
 /* background images */
 header {
-  /* background-image: url('../assets/images/bg (4).jpg'); */
+  background-image: url('../assets/images/bg (4).jpg');
 }
 
 .bg-1 {
@@ -36,7 +36,7 @@ h4, .c-main:hover, footer>p, .modal-title {
 
 h4 {
   font-size: 50px;
-  font-family: 'Amatic SC', cursive;
+  /* font-family: 'Amatic SC', cursive; */
 }
 
 .bg-img {
@@ -47,11 +47,9 @@ h4 {
 }
 
 .container-bg-img:hover {
-  background: radial-gradient( rgba(0, 0, 0, 0.562),#000000) ;
+  background: radial-gradient( rgba(0, 0, 0, 0.842),#000000) ;
   cursor: pointer;
-  font-size: 1.5rem;
-  font-family: 'Julius Sans One', sans-serif;
-  font-weight: bold;  
+  font-size: 1.1rem;
 }
 
 .container-bg-img {
