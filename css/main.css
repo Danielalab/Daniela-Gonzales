@@ -118,7 +118,7 @@ h4, .font, h3, h5 {
 
 #about-me h4, #contact h4 {
   font-weight: 600;
-  /* color: #DD6169; */
+  color: #352A77;
 }
 
 /* style PORTFOLIO */
@@ -140,15 +140,24 @@ h4, .font, h3, h5 {
 }
 
 #contact a {
-  border: 1px solid rgb(70, 76, 158);
-  padding: 1rem 1.2rem;
-  color: rgb(70, 76, 158);
+  padding: 1rem 1.2rem; 
+  color: #2B1E66;   
+  text-decoration: none;  
   font-size: 1.2rem;
-  text-decoration: none;
+  font-weight: 400;  
+  transition: all 100ms ease;
+}
+
+#contact a:hover {
+  font-weight: 500;
+}
+
+#contact ul#list-icons a {
+  border: 1px solid rgb(70, 76, 158);
 }
 
 #about-me h5 {
-  color: rgb(70, 76, 158);  
+  color: #EA0B8C;
   font-size: 2rem;
 }
 
