@@ -153,11 +153,11 @@ h4, .font, h3, h5 {
 }
 
 #contact ul#list-icons a {
-  border: 1px solid rgb(70, 76, 158);
+  border: 1px solid #464c9e;
 }
 
 #about-me h5 {
-  color: #EA0B8C;
+  color: #5C2A77;
   font-size: 2rem;
 }
 
