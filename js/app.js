@@ -14,6 +14,14 @@ window.onload = () => {
   let divContainerBgImg = $('#work .container-bg-img');
   let spanNameProyect;
 
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 20) {
+      $('.navbar').addClass('header-scroll')
+    } else {
+      $('.navbar').removeClass('header-scroll');
+    }
+  });
+
   // funcionalidad para efecto de presentación de los proyectos en la sección portafolio 
   function showText () {
     $(this).css('color', '#ffffff');;

@@ -15,10 +15,6 @@ header {
   background-image: url('../assets/images/3.png');  
 }
 
-.bg-4{
-  background-image: url('../assets/images/4.png');  
-}
-
 .bg-5 {
   background-image: url('../assets/images/5.png');  
 }
@@ -30,7 +26,7 @@ header {
 
 /* style general */
 
-h4, .c-main:hover, footer>p{
+h4, .c-main:hover{
   color: #61DDD5;
 } 
 
@@ -59,8 +55,12 @@ h4 {
 /* style navbar */
 
 header .navbar {
-  padding: .8rem 1rem;
+  animation: all 1000ms ease;
+  padding: .6rem 1rem;
   background-color: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
 }
 
 header .navbar ul.mr-auto-left {
@@ -72,8 +72,31 @@ header .navbar ul.mr-auto-left>li {
   margin: 0 1rem;
 }
 
-.c-main, .navbar-toggler-icon , .font-2, .font{
+header .navbar ul.mr-auto-left>li>a {
+ font-weight: bold;
+}
+
+.c-main, .navbar-toggler-icon , .font-2, .font, footer>p{
   color: white;
+}
+
+.icon-menu {
+  color: #ffffff;
+}
+
+/*header scroll*/
+
+header .navbar.header-scroll {
+  background-color: #ffffff;
+  border-bottom: 1px solid #dee2e6;
+}
+
+header .navbar.header-scroll ul>li>a {
+  color: #352A77;
+}
+
+header .navbar.header-scroll .icon-menu {
+  color: #352A77;
 }
 
 /* style view MAIN */
@@ -101,7 +124,7 @@ h4, .font, h3, h5 {
 }
 
 .font {
-  font-size: 6rem;
+  font-size: 4rem;
 }
 
 .font-2 {
@@ -123,6 +146,10 @@ h4, .font, h3, h5 {
 
 /* style PORTFOLIO */
 
+.h-proyects {
+  height: 40vh;
+}
+
 #particles-js {
   width: 100%;
 	height: 100%;
@@ -131,6 +158,11 @@ h4, .font, h3, h5 {
 
 #work{
   position: relative;
+}
+
+.name-proyect {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 /* style Contact */
@@ -143,13 +175,13 @@ h4, .font, h3, h5 {
   padding: 1rem 1.2rem; 
   color: #2B1E66;   
   text-decoration: none;  
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;  
   transition: all 100ms ease;
 }
 
 #contact a:hover {
-  font-weight: 500;
+  text-decoration: underline;
 }
 
 #contact ul#list-icons a {
@@ -170,6 +202,15 @@ h4, .font, h3, h5 {
 /* media querys */
 
 @media (min-width: 768px) {
+
+  header .navbar.header-scroll ul>li>a {
+    animation: all 500ms ease;
+  }
+
+  header .navbar.header-scroll ul>li>a:hover {
+    border-bottom: 1.5px solid #352A77;
+  }
+  
   .font {
     font-size: 5rem;
   }
@@ -178,7 +219,17 @@ h4, .font, h3, h5 {
     height: 60vh;
   }
 
-  .h-35 {
+  .h-proyects {
     height: 35vh;
   }
+
+  #contact a {
+    padding: 1rem 1.2rem; 
+    color: #2B1E66;   
+    text-decoration: none;  
+    font-size: 1.2rem;
+    font-weight: 400;  
+    transition: all 100ms ease;
+  }
+  
 }
